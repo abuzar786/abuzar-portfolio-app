@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-hue: 270;
+  --black-lightness: 15%;
+  --dark-lightness: 44%;
+  --light-lightness: 94%;
+  --white-lightness: 100%;
+  --color-primary: hsl(270, 89%, 41%);
+  --color-white: hsl(0, 0%, 98%);
+  --color-light: hsl(270, 5%, 94%);
+  --color-black: hsl(270, 5%, 15%);
+  --color-dark: hsl(270, 5%, 44%);
+
+  /* General Container Variables */
+
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+
+  /* Border Radius Variables */
+
+  --border-radius-1: 1.2rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 0.5rem;
+
+  /* General Transition Variables */
+
+  --transition: all 500ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+/* General container Class */
+
+.container {
+  width: var(--container-width-lg);
+  margin-inline: auto;
+  max-width: 1920px;
+}
+
+/* General Section Styles */
+
+section {
+  padding: 10rem 0;
+  background: var(--color-light);
+  transform: var(--transition);
+}
+
+section:nth-child(even) {
+  background: var(--color-white);
+}
+section > h2 {
+  text-align: center;
+}
+section > p {
+  text-align: center;
+  margin: 0.5rem auto 4rem;
+  width: 40%;
+}
+
+/* General Section Styles */
+
+a {
+  color: var(--color-white);
+  transform: var(--transition);
+}
+
+/* General Heading Styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  color: var(--color-black);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.1rem;
+}
+h5 {
+  font-size: 0.95rem;
+}
+h6 {
+  font-size: 0.8rem;
+}
+
+/* General Styles for Images */
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* General Styles for Button */
+.btn {
+  display: inline-block;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--color-light);
+  color: var(--color-black);
+  padding: 0.6rem 2.5rem;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-2);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn:hover {
+  background: transparent;
+  border-color: var(--color-light);
+  transform: translateY(-0.5rem);
+}
+.btn.white {
+  background: var(--color-white);
+}
+.btn.white:hover {
+  background: transparent;
+  border-color: var(--color-white);
+}
+.btn.primary {
+  background: var(--color-primary);
+  color: white;
+}
+.btn.primary:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+.btn.sm {
+  padding: 0.5rem 1.2rem;
+}
