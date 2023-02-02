@@ -23,3 +23,23 @@
 .service h4 {
   margin-bottom: 0.7rem;
 }
+
+/* Media Queries for Tablets */
+
+@media screen and (max-width: 1024px) {
+  .services__container {
+    gap: 1.5rem;
+  }
+}
+
+/* Media Queries for Phones */
+
+@media screen and (max-width: 600px) {
+  .services__container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .card.service{
+    gap: 1.2rem;
+  }
+}
