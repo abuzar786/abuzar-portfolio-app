@@ -29,6 +29,7 @@ header {
   display: flex;
   align-items: center;
   gap: 1.2rem;
+  margin-top: 1rem;
 }
 .header__social {
   position: absolute;
@@ -55,3 +56,30 @@ header {
 }
 
 /* Media Quesries for Tablets */
+
+@media screen and (max-width: 1024px) {
+  header {
+    margin-top: 0;
+    height: 100vh;
+  }
+}
+
+/* Media Quesries for Smaller devices like Phones */
+
+@media screen and (max-width: 600px) {
+  .header__profile {
+    width: 14rem;
+    height: 17rem;
+    max-width: 60%;
+    max-height: 35vh;
+  }
+  .header__container p {
+    width: 100%;
+  }
+  .header__cta {
+    gap: 1rem;
+  }
+  .header__social {
+    display: none;
+  }
+}
