@@ -17,16 +17,13 @@ const About = () => {
         <div className="about__right">
           <h2>About Me</h2>
           <div className="about__cards">
-            {data.map((cardItem) => {
-              return (
-                <Card
-                  key={cardItem.id}
-                  icon={cardItem.icon}
-                  title={cardItem.title}
-                  desc={cardItem.desc}
-                />
-              );
-            })}
+            {data.map((item) => (
+              <Card key={item.id} className="about__card">
+                <span className="about__card-icon">{item.icon}</span>
+                <h5>{item.title}</h5>
+                <small>{item.desc}</small>
+              </Card>
+            ))}
           </div>
           <p>
             Building Projects of my clients love always been my passion. Being
