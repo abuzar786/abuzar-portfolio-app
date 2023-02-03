@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Autoplay } from "swiper";
+import "swiper/css/autoplay";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -17,12 +18,17 @@ const Testimonials = () => {
       <p>These are unbiased testimonials from some of my clients</p>
       <div className="container">
         <Swiper
-          slidesPerView={3}
+          slidesPerView={1}
           spaceBetween={30}
+          breakpoints={{
+            601: { slidesPerView: 2 },
+            1025: { slidesPerView: 3 },
+          }}
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
+          autoplay={true}
           className="mySwiper"
         >
           {testimonials.map((testimonial) => (

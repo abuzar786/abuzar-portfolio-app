@@ -29,3 +29,12 @@
   background: var(--color-primary);
 }
 
+/* Media Queries for Tablets */
+
+@media screen and (max-width: 1024px) {
+}
+
+/* Media Queries for Phones */
+
+@media screen and (max-width: 600px) {
+}
