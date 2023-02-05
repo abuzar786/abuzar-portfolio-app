@@ -15,5 +15,15 @@ export const ThemeProvide = ({ Children }) => {
     dispatchTheme({ type: buttonClassName });
   };
 
-  return <ThemeContext.Provider>{Children} </ThemeContext.Provider>;
+  return (
+    <ThemeContext.Provider value={{ themeState, themeHandler }}>
+      {Children}
+    </ThemeContext.Provider>
+  );
+};
+
+// Custom Hook to use our theme context
+
+export const useThemeContext = () => {
+  return useContext(ThemeContext);
 };

@@ -1,5 +1,7 @@
+import { useThemeContext } from "../context/theme-context";
 const BackgroundColor = ({ className }) => {
-  return <button className={className}></button>;
+  const { themeHandler } = useThemeContext();
+  return <button className={className} onClick={() => themeHandler(className)}></button>;
 };
 
 export default BackgroundColor;
