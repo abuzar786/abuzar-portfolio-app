@@ -1,3 +1,4 @@
+import data from "./data";
 import "./floating-nav.css";
 const FloatingNav = () => {
   return (
