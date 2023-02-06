@@ -1,4 +1,4 @@
-import HeaderImage from "../../assets/header.jpg";
+import HeaderImage from "../../assets/header-2.png";
 import data from "./data";
 import "./header.css";
 
