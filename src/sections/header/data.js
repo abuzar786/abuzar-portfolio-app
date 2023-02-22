@@ -6,12 +6,12 @@ import { AiOutlineGithub } from "react-icons/ai";
 const data = [
   {
     id: 1,
-    link: "https://instagram.com",
+    link: "https://instagram.com/muhammad.abuzar.9216?igshid=YmMyMTA2M2Y=",
     icon: <AiOutlineInstagram />,
   },
   {
     id: 2,
-    link: "https://twitter.com",
+    link: "https://twitter.com/AbuzarTechie",
     icon: <AiOutlineTwitter />,
   },
   {
@@ -21,7 +21,7 @@ const data = [
   },
   {
     id: 4,
-    link: "https://github.com",
+    link: "https://github.com/abuzar786",
     icon: <AiOutlineGithub />,
   },
 ];
