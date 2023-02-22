@@ -29,7 +29,7 @@ const Portfolio = () => {
         Check out some of the projects I recently worked on for my clients. Use
         the buttons to toggle the different categories.
       </p>
-      <div className="container portfolio__container">
+      <div className="container portfolio__container" data-aos="fade-up">
         <ProjectsCategories
           categories={uniqueCategories}
           onFilterProjects={filterProjectsHandler}
